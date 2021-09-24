@@ -1,0 +1,8 @@
+<div class="gallery-container">
+  <button (click)="back()">Back</button>
+  <div class="gallery-item"
+       [style.max-width.%]="itemWidth" [style.flex-basis.%]="itemWidth">
+    <app-img-slide [src]="listImage[number]"></app-img-slide>
+  </div>
+  <button (click)="next()">Next</button>
+</div>
